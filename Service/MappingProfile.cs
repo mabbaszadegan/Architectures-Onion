@@ -15,10 +15,11 @@ namespace Service
         {
             CreateMap<Company, CompanyDto>()
                 .ForCtorParam("FullAddress", opt => opt.MapFrom(x => string.Join(' ', x.Address, x.Country)));
-
-            CreateMap<Employee, EmployeeDto>();
-           
+            
             CreateMap<CompanyForCreationDto, Company>();
+            
+            CreateMap<Employee, EmployeeDto>();
+            CreateMap<EmployeeForCreationDto, Employee>();
         }
     }
 }
