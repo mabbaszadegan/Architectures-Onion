@@ -11,6 +11,8 @@ builder.Services.ConfigureCompanyRepository();
 builder.Services.ConfigureEmployeeRepository();
 builder.Services.ConfigureRepositoryManager();
 builder.Services.ConfigureServiceManager();
+builder.Services.AddAuthentication();
+builder.Services.ConfigureIdentity();
 builder.Services.ConfigureSqlContext(builder.Configuration);
 builder.Services.AddAutoMapper(typeof(Service.MappingProfile));
 
@@ -31,6 +33,7 @@ app.UseForwardedHeaders(new ForwardedHeadersOptions
 });
 app.UseCors("CorsPolicy");
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

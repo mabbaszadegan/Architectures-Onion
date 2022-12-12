@@ -3,23 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net6APISample", "Net6APISample\Net6APISample.csproj", "{C35BD730-0C99-4895-8B54-E6EDC08757CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Net6APISample", "Net6APISample\Net6APISample.csproj", "{C35BD730-0C99-4895-8B54-E6EDC08757CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{F99EC997-900E-4B31-AE00-1CBB6E2721D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Shared\Shared.csproj", "{F99EC997-900E-4B31-AE00-1CBB6E2721D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contracts\Contracts.csproj", "{17355897-92B3-445B-8390-264A0D19FDCB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contracts", "Contracts\Contracts.csproj", "{17355897-92B3-445B-8390-264A0D19FDCB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerService", "LoggerService\LoggerService.csproj", "{42706AD8-CE73-4E05-A93A-42CEB516A0F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggerService", "LoggerService\LoggerService.csproj", "{42706AD8-CE73-4E05-A93A-42CEB516A0F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{9D2FDB92-F204-4503-B4FA-A21459C19774}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{9D2FDB92-F204-4503-B4FA-A21459C19774}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{F516F3FE-99AB-4054-AA44-78FC9C4FAFF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repository\Repository.csproj", "{F516F3FE-99AB-4054-AA44-78FC9C4FAFF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service.Contracts", "Service.Contracts\Service.Contracts.csproj", "{EFC1781F-1E36-4EBC-8CFE-E87D459AA30A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service.Contracts", "Service.Contracts\Service.Contracts.csproj", "{EFC1781F-1E36-4EBC-8CFE-E87D459AA30A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{5AAA11F1-2665-4F53-9339-C265FAADEB47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "Service\Service.csproj", "{5AAA11F1-2665-4F53-9339-C265FAADEB47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net6APISample.Presentation", "Net6APISample.Presentation\Net6APISample.Presentation.csproj", "{D03BF0F0-72D7-4F2B-B9A1-6602E80CB8AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Net6APISample.Presentation", "Net6APISample.Presentation\Net6APISample.Presentation.csproj", "{D03BF0F0-72D7-4F2B-B9A1-6602E80CB8AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
