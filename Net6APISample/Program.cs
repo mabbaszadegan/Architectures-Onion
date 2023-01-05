@@ -1,6 +1,10 @@
 using Contracts;
 using Microsoft.AspNetCore.HttpOverrides;
+using Microsoft.AspNetCore.Mvc.Formatters;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 using Net6APISample.Extensions;
+using Net6APISample.Presentation.ActionFilters;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +19,7 @@ builder.Services.AddAuthentication();
 builder.Services.ConfigureIdentity();
 builder.Services.ConfigureSqlContext(builder.Configuration);
 builder.Services.AddAutoMapper(typeof(Service.MappingProfile));
+builder.Services.AddScoped<ValidationFilterAttribute>();
 
 builder.Services.AddControllers().AddApplicationPart(typeof(Net6APISample.Presentation.AssemblyReference).Assembly);
 

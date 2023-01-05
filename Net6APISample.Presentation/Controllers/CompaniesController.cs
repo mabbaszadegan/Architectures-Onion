@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Net6APISample.Presentation.ActionFilters;
 using Net6APISample.Presentation.ModelBinders;
 using Service.Contracts;
 using Shared.DataTransferObjects;
@@ -39,6 +40,7 @@ namespace Net6APISample.Presentation.Controllers
         }
 
         [HttpPost]
+        [ServiceFilter(typeof(ValidationFilterAttribute))]
         public IActionResult CreateCompany([FromBody] CompanyForCreationDto company)
         {
             if (company is null)
@@ -63,6 +65,7 @@ namespace Net6APISample.Presentation.Controllers
         }
 
         [HttpPut("{id:guid}")]
+        [ServiceFilter(typeof(ValidationFilterAttribute))]
         public IActionResult UpdateCompany(Guid id, [FromBody] CompanyForUpdateDto company)
         {
             if (company is null)
